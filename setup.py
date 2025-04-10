@@ -1,12 +1,28 @@
 from setuptools import find_packages, setup
+from typing import List
 
+HYPEN_E_DOT ='-e .'
 
+def get_requirements(file_path:str)->list[str]:
+    '''
+    This fn will return the list 
+    '''
+    requirements =[]
+    with open(file_path) as file_obj:
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
+
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
+
+    return requirements
 
 setup(
     name='mlproject',
     version='0.0.1',
     author='A Anand',
-    author_email='mitochondria118@gmail.com'
-    packages=find_packages()
-    install_requires = get_requirements('requirements.txt')
+    author_email='mitochondria118@gmail.com',
+    packages=find_packages(),
+    install_requires = ['numpy', 'pandas','matplotlib','seaborn' ]
+    #install_requires = get_requirements('requirements.txt')     
 )
