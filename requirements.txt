@@ -1,4 +1,7 @@
 pandas 
 numpy 
 matplotlib
--e .
+scikit-learn
+catboost
+
+# -e .
