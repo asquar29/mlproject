@@ -3,5 +3,5 @@ numpy
 matplotlib
 scikit-learn
 catboost
-
-# -e .
+xgboost
+-e .
