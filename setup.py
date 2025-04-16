@@ -23,6 +23,6 @@ setup(
     author='A Anand',
     author_email='mitochondria118@gmail.com',
     packages=find_packages(),
-    install_requires = ['numpy', 'pandas','matplotlib','seaborn' ]
-    #install_requires = get_requirements('requirements.txt')     
+   # install_requires = ['numpy', 'pandas','matplotlib','seaborn' ]
+    install_requires = get_requirements('requirements.txt')     
 )
