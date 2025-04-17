@@ -4,5 +4,6 @@ matplotlib
 scikit-learn
 catboost
 xgboost
+pickle
 dill
 -e .
