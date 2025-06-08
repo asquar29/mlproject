@@ -6,4 +6,5 @@ catboost
 xgboost
 pickle
 dill
+flask
 -e .

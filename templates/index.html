@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #03a9f4;
+            --light: #f5f9ff;
+            --dark: #333;
+            --success: #4caf50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #0288d1;
+        }
+        
+        .demo-section {
+            padding: 3rem 0;
+            background-color: white;
+        }
+        
+        .demo-image {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 0.5rem 0;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-top: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Student Performance Predictor</h1>
+            <p class="tagline">Data-driven insights to help students succeed</p>
+        </div>
+    </header>
+    
+    <section class="main-content">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2>Unlock the Power of Predictive Analytics in Education</h2>
+                <p style="max-width: 800px; margin: 0 auto;">
+                    Our advanced machine learning model analyzes multiple factors that influence academic performance, 
+                    helping educators identify at-risk students early and implement targeted interventions.
+                </p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Accurate Predictions</h3>
+                    <p>Using state-of-the-art machine learning algorithms to predict student performance with high accuracy.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Early Intervention</h3>
+                    <p>Identify at-risk students before they fall behind, enabling timely and targeted support.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Performance Tracking</h3>
+                    <p>Monitor progress over time and adjust teaching strategies based on predictive analytics.</p>
+                </div>
+            </div>
+            
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <p>Prediction Accuracy</p>
+                    <div class="stat-number">92%</div>
+                </div>
+                
+                <div class="stat-card">
+                    <p>Students Analyzed</p>
+                    <div class="stat-number">10k+</div>
+                </div>
+                
+                <div class="stat-card">
+                    <p>Factors Considered</p>
+                    <div class="stat-number">25+</div>
+                </div>
+                
+                <div class="stat-card">
+                    <p>Success Rate</p>
+                    <div class="stat-number">89%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="demo-section">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+            <div style="flex: 1; min-width: 300px; padding-right: 2rem;">
+                <h2>How Our Prediction Model Works</h2>
+                <p>
+                    Our model analyzes various factors that affect student performance, including:
+                </p>
+                <ul>
+                    <li>Previous academic records</li>
+                    <li>Attendance patterns</li>
+                    <li>Study habits and time management</li>
+                    <li>Participation in class activities</li>
+                    <li>Socio-economic factors</li>
+                    <li>Learning preferences and styles</li>
+                </ul>
+                <p>
+                    By processing this data through our advanced algorithm, we can predict academic outcomes 
+                    and provide actionable insights for improvement.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="/api/placeholder/600/400" alt="Performance Prediction Dashboard" class="demo-image" />
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Educational Outcomes?</h2>
+            <p>Start using our student performance prediction tool today and make data-driven decisions for better academic results.</p>
+            <a href="/predictdata" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Student Performance Predictor. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
